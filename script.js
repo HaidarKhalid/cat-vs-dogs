@@ -61,7 +61,7 @@ function jumpPlayer() {
                 score++
                 scoreViewer.innerText = score
             }
-            if (score >= 10000) {
+            if (score >= 1200) {
                 finishGameDiv.style.display = 'flex'
                 finishGameBoolean = true
                 clearInterval(scoreCounter)
