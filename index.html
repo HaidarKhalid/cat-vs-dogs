@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jumpPlayer()" onkeypress="jumpPlayer()">
+<head>
+    <link rel="icon" type="image/x-icon" href="images/HaidarKhalid_Cat_vs_dog_logo_3aad6113-6707-4719-a7d5-32fb6a484ded.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Cat Run !</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="finishGameDiv">
+        <h1>Finally!</h1>
+        <h2>You saved the cat</h2>
+        <h3>If you are seeing this it means that you have successfully 
+            <br> <i>End the game</i>
+             <br> 
+            Take a screenshot and send it to me and im gonna put 
+            <br> Your name and your account in "People who finished the game" section below
+            you can see my accounts to contact me in <a href="https://haidarkhalid.github.io/portfolio" target="_blank">My website</a>
+         </h3>
+    </div>
+    <div onclick="replay()" id="loseDiv">
+        <h1>You Lost</h1>
+        <h2>Click anywhere to play again</h2>
+        <br>
+        <h3>Score : <span id="scoreElLose"></span></h3>
+    </div>
+    <div class="scoreInfo">
+        <h3>Score : <span id="scoreEl"></span></h3>
+        <h3>best score : <span id="bestScoreEl"></span></h3>
+    </div>
+    <div class="main">
+        <div class="player"></div>
+        <div class="water-h"></div>
+    </div>
+    <div class="buttons-under">
+        <a class="contactBtn" href="https://haidarKhalid.github.io/portfolio" target="_blank">Contact Developer</a>
+        <button onclick="muteSfx()" class="muteSfx">Mute/Unmute Sfx</button>
+    </div>
+
+    <div class="finishedGame">
+        <br>
+        <h1>People who finished the game </h1><h3>(Got to score 10,000)</h3>
+        <br>
+        <hr>
+        <br>
+        <ol class="o-list">
+            <li>No one yet</li>
+        </ol>
+        <br>
+        <br>
+    </div>
+    <video src="sfx/jump.wav" hidden class="jumpSfx"></video>
+    <video src="sfx/415209__inspectorj__cat-screaming-a.wav" hidden class="dieSfx"></video>
+</body>
+</html>
